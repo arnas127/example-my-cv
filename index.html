@@ -1,0 +1,167 @@
+---
+layout: default
+---
+
+<!-- Language Switcher -->
+<div class="fixed top-6 right-6 z-50">
+  <div class="glass-effect rounded-full p-1 flex gap-1">
+    <button type="button"
+      class="lang-btn px-4 py-2 rounded-full text-white text-sm font-medium bg-white/20 hover:bg-white/30 transition"
+      data-lang="en" aria-pressed="true">
+      EN
+    </button>
+    <button type="button"
+      class="lang-btn px-4 py-2 rounded-full text-white text-sm font-medium bg-white/10 hover:bg-white/20 transition"
+      data-lang="lt" aria-pressed="false">
+      LT
+    </button>
+  </div>
+</div>
+
+<!-- Hero Section with Parallax -->
+<section class="parallax-bg relative min-h-screen flex items-center justify-center w-full"
+  style="background-image: url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 1920 1080%22%3E%3Cdefs%3E%3ClinearGradient id=%22grad%22 x1=%220%25%22 y1=%220%25%22 x2=%22100%25%22 y2=%22100%25%22%3E%3Cstop offset=%220%25%22 style=%22stop-color:%231e293b;stop-opacity:1%22 /%3E%3Cstop offset=%22100%25%22 style=%22stop-color:%237c3aed;stop-opacity:1%22 /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width=%221920%22 height=%221080%22 fill=%22url(%23grad)%22/%3E%3Ccircle cx=%22400%22 cy=%22300%22 r=%22150%22 fill=%22%23ffffff%22 opacity=%220.05%22/%3E%3Ccircle cx=%221500%22 cy=%22700%22 r=%22200%22 fill=%22%23ffffff%22 opacity=%220.05%22/%3E%3Ccircle cx=%22900%22 cy=%22200%22 r=%22100%22 fill=%22%23ffffff%22 opacity=%220.05%22/%3E%3C/svg%3E');">
+  <div class="gradient-overlay absolute inset-0"></div>
+
+  <div class="relative z-10 container mx-auto px-6 py-20 text-center">
+    <!-- Profile Image Placeholder -->
+    <div class="mb-8 float-animation">
+      <div class="w-56 h-56 md:w-80 md:h-80 mx-auto rounded-full overflow-hidden profile-image border-4 border-white">
+
+        <img src="{{ '/assets/images/ema-simkute-profile.png' | relative_url }}" alt="Profile photo"
+          class="w-full h-full object-cover" />
+      </div>
+    </div>
+
+    <!-- Name and Title -->
+    <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4" data-i18n="hero.name">
+      {{ site.data.i18n.en.hero.name }}
+    </h1>
+    <p class="text-2xl md:text-3xl text-purple-200 font-light mb-6" data-i18n="hero.title">
+      {{ site.data.i18n.en.hero.title }}
+    </p>
+    <p class="text-lg md:text-xl text-purple-100 max-w-2xl mx-auto font-light" data-i18n="hero.tagline">
+      {{ site.data.i18n.en.hero.tagline }}
+    </p>
+
+    <!-- Contact Info -->
+    <div class="mt-12 flex flex-wrap justify-center gap-6 text-white">
+      <a id="email-link" href="mailto:{{ site.data.i18n.en.hero.email }}"
+        class="glass-effect px-6 py-3 rounded-full hover:bg-white hover:bg-opacity-20 transition-all duration-300 flex items-center gap-2">
+        <i class="fas fa-envelope"></i>
+        <span data-i18n="hero.email">{{ site.data.i18n.en.hero.email }}</span>
+      </a>
+
+      <a id="phone-link" href="tel:{{ site.data.i18n.en.hero.phone }}"
+        class="glass-effect px-6 py-3 rounded-full hover:bg-white hover:bg-opacity-20 transition-all duration-300 flex items-center gap-2">
+        <i class="fas fa-phone"></i>
+        <span data-i18n="hero.phone">{{ site.data.i18n.en.hero.phone }}</span>
+      </a>
+
+      <div class="glass-effect px-6 py-3 rounded-full flex items-center gap-2">
+        <i class="fas fa-map-marker-alt"></i>
+        <span data-i18n="hero.location">{{ site.data.i18n.en.hero.location }}</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Key Strengths Section -->
+<section class="w-full py-20 px-6 bg-white">
+  <div class="container mx-auto max-w-6xl">
+    <h2 class="text-4xl md:text-5xl font-bold text-center mb-4 pb-2 leading-tight
+           bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent" data-i18n="strengths.heading">
+      {{ site.data.i18n.en.strengths.heading }}
+    </h2>
+    <p class="text-center text-gray-600 mb-16 text-lg" data-i18n="strengths.subheading">
+      {{ site.data.i18n.en.strengths.subheading }}
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <!-- Strength 1 -->
+      <div
+        class="strength-card bg-gradient-to-br from-indigo-50 to-purple-50 rounded-2xl p-8 shadow-lg hover:shadow-2xl">
+        <div
+          class="w-16 h-16 bg-gradient-to-br from-indigo-500 to-purple-500 rounded-xl flex items-center justify-center mb-6">
+          <i class="fas fa-bullseye text-white text-2xl"></i>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-800 mb-3" data-i18n="strengths.items.0.title">
+          {{ site.data.i18n.en.strengths.items[0].title }}
+        </h3>
+        <p class="text-gray-600" data-i18n="strengths.items.0.desc">
+          {{ site.data.i18n.en.strengths.items[0].desc }}
+        </p>
+      </div>
+
+      <!-- Strength 2 -->
+      <div class="strength-card bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-8 shadow-lg hover:shadow-2xl">
+        <div
+          class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl flex items-center justify-center mb-6">
+          <i class="fas fa-wand-magic-sparkles text-white text-2xl"></i>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-800 mb-3" data-i18n="strengths.items.1.title">
+          {{ site.data.i18n.en.strengths.items[1].title }}
+        </h3>
+        <p class="text-gray-600" data-i18n="strengths.items.1.desc">
+          {{ site.data.i18n.en.strengths.items[1].desc }}
+        </p>
+      </div>
+
+      <!-- Strength 3 -->
+      <div class="strength-card bg-gradient-to-br from-pink-50 to-rose-50 rounded-2xl p-8 shadow-lg hover:shadow-2xl">
+        <div
+          class="w-16 h-16 bg-gradient-to-br from-pink-500 to-rose-500 rounded-xl flex items-center justify-center mb-6">
+          <i class="fas fa-chart-line text-white text-2xl"></i>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-800 mb-3" data-i18n="strengths.items.2.title">
+          {{ site.data.i18n.en.strengths.items[2].title }}
+        </h3>
+        <p class="text-gray-600" data-i18n="strengths.items.2.desc">
+          {{ site.data.i18n.en.strengths.items[2].desc }}
+        </p>
+      </div>
+
+      <!-- Strength 4 -->
+      <div class="strength-card bg-gradient-to-br from-rose-50 to-orange-50 rounded-2xl p-8 shadow-lg hover:shadow-2xl">
+        <div
+          class="w-16 h-16 bg-gradient-to-br from-rose-500 to-orange-500 rounded-xl flex items-center justify-center mb-6">
+          <i class="fas fa-people-group text-white text-2xl"></i>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-800 mb-3" data-i18n="strengths.items.3.title">
+          {{ site.data.i18n.en.strengths.items[3].title }}
+        </h3>
+        <p class="text-gray-600" data-i18n="strengths.items.3.desc">
+          {{ site.data.i18n.en.strengths.items[3].desc }}
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="w-full bg-gradient-to-r from-indigo-600 to-purple-600 py-12 px-6">
+  <div class="container mx-auto text-center">
+    <div class="flex justify-center gap-6 mb-6">
+      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+        class="w-12 h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center text-white hover:bg-opacity-30 transition-all duration-300"
+        aria-label="LinkedIn">
+        <i class="fab fa-linkedin-in text-xl"></i>
+      </a>
+      <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
+        class="w-12 h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center text-white hover:bg-opacity-30 transition-all duration-300"
+        aria-label="Instagram">
+        <i class="fab fa-instagram text-xl"></i>
+      </a>
+      <a href="https://github.com" target="_blank" rel="noopener noreferrer"
+        class="w-12 h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center text-white hover:bg-opacity-30 transition-all duration-300"
+        aria-label="GitHub">
+        <i class="fab fa-github text-xl"></i>
+      </a>
+    </div>
+
+    <!-- Translated via JS; {year} placeholder is replaced at runtime -->
+    <p class="text-white text-sm" data-i18n="footer.copyright">{{ site.data.i18n.en.footer.copyright }}</p>
+    <p class="text-white text-sm"> <span data-i18n="footer.credit">{{ site.data.i18n.en.footer.credit }}</span><a
+        class="underline" href="https://mycv.lt">mycv.lt</p>
+  </div>
+</footer>

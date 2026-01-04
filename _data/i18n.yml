@@ -1,0 +1,53 @@
+en:
+  meta:
+    title: "Ema Simkutė | Marketing & Creative Director"
+    description: "Bilingual (EN/LT) professional profile website for Ema Simkutė — Marketing & Creative Director based in Vilnius."
+  hero:
+    name: "Ema Simkutė"
+    title: "Marketing & Creative Director"
+    tagline: "27-year-old Marketing & Creative Director from Vilnius, building brands, stories, and campaigns that perform."
+    email: "ema.simkute@mycv.lt"
+    phone: "+370 6XX XXXXX"
+    location: "Vilnius, Lithuania"
+  strengths:
+    heading: "Key Strengths"
+    subheading: "Core competencies that drive measurable growth"
+    items:
+      - title: "Brand Strategy"
+        desc: "Positioning, messaging, and go-to-market clarity"
+      - title: "Creative Direction"
+        desc: "Concepts, visuals, and cohesive brand systems"
+      - title: "Performance Marketing"
+        desc: "Data-led campaigns across digital channels"
+      - title: "Team Leadership"
+        desc: "Guiding teams to ship great work—on time"
+  footer:
+    copyright: "© {year} All rights reserved"
+    credit: "Web design by "
+
+lt:
+  meta:
+    title: "Ema Simkutė | Rinkodaros ir kūrybos vadovė"
+    description: "Dvikalbis (EN/LT) Ema Simkutės — rinkodaros ir kūrybos vadovės iš Vilniaus — profesionalus profilis."
+  hero:
+    name: "Ema Simkutė"
+    title: "Rinkodaros ir kūrybos vadovė"
+    tagline: "27 metų rinkodaros ir kūrybos vadovė iš Vilniaus, kurianti prekės ženklus, istorijas ir kampanijas, kurios veikia."
+    email: "ema.simkute@mycv.lt"
+    phone: "+370 6XX XXXXX"
+    location: "Vilnius, Lietuva"
+  strengths:
+    heading: "Stiprybės"
+    subheading: "Svarbiausios kompetencijos, kurios kuria augimą"
+    items:
+      - title: "Prekės ženklo strategija"
+        desc: "Pozicionavimas, žinutės ir įvedimas į rinką"
+      - title: "Kūrybinė kryptis"
+        desc: "Koncepcijos, vizualai ir nuosekli sistema"
+      - title: "Rezultatyvi rinkodara"
+        desc: "Duomenimis grįstos kampanijos skaitmeniniuose kanaluose"
+      - title: "Komandos lyderystė"
+        desc: "Kryptingas darbas su komanda ir rezultatai laiku"
+  footer:
+    copyright: "© {year} Visos teisės saugomos"
+    credit: "Puslapio dizainas sukurtas "

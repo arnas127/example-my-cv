@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en" class="h-full">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title data-i18n-meta="meta.title">{{ site.data.i18n.en.meta.title }}</title>
+  <meta name="description" data-i18n-meta="meta.description" content="{{ site.data.i18n.en.meta.description }}" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind (CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Site styles -->
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
+
+  <!-- i18n data -->
+  <script>
+    window.I18N = {{ site.data.i18n | jsonify }};
+  </script>
+  <script src="{{ '/assets/js/i18n.js' | relative_url }}" defer></script>
+  <link rel="icon" type="image/x-icon" href="{{ '/assets/images/favicon.ico' | relative_url }}">
+</head>
+
+<body class="h-full w-full overflow-auto bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+  {{ content }}
+</body>
+
+</html>

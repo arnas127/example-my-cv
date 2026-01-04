@@ -1,0 +1,11 @@
+title: "Ema Simkutė"
+description: "Marketing & Creative Director from Vilnius"
+url: "https://example.mycv.lt"
+baseurl: ""
+markdown: kramdown
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - README.md
