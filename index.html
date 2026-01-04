@@ -66,6 +66,78 @@ layout: default
   </div>
 </section>
 
+<!-- Key Strengths Section -->
+<section class="w-full py-20 px-6 bg-white">
+  <div class="container mx-auto max-w-6xl">
+    <h2 class="text-4xl md:text-5xl font-bold text-center mb-4 pb-2 leading-tight
+           bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent" data-i18n="strengths.heading">
+      {{ site.data.i18n.en.strengths.heading }}
+    </h2>
+    <p class="text-center text-gray-600 mb-16 text-lg" data-i18n="strengths.subheading">
+      {{ site.data.i18n.en.strengths.subheading }}
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <!-- Strength 1 -->
+      <div
+        class="strength-card bg-gradient-to-br from-indigo-50 to-purple-50 rounded-2xl p-8 shadow-lg hover:shadow-2xl">
+        <div
+          class="w-16 h-16 bg-gradient-to-br from-indigo-500 to-purple-500 rounded-xl flex items-center justify-center mb-6">
+          <i class="fas fa-bullseye text-white text-2xl"></i>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-800 mb-3" data-i18n="strengths.items.0.title">
+          {{ site.data.i18n.en.strengths.items[0].title }}
+        </h3>
+        <p class="text-gray-600" data-i18n="strengths.items.0.desc">
+          {{ site.data.i18n.en.strengths.items[0].desc }}
+        </p>
+      </div>
+
+      <!-- Strength 2 -->
+      <div class="strength-card bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-8 shadow-lg hover:shadow-2xl">
+        <div
+          class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl flex items-center justify-center mb-6">
+          <i class="fas fa-wand-magic-sparkles text-white text-2xl"></i>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-800 mb-3" data-i18n="strengths.items.1.title">
+          {{ site.data.i18n.en.strengths.items[1].title }}
+        </h3>
+        <p class="text-gray-600" data-i18n="strengths.items.1.desc">
+          {{ site.data.i18n.en.strengths.items[1].desc }}
+        </p>
+      </div>
+
+      <!-- Strength 3 -->
+      <div class="strength-card bg-gradient-to-br from-pink-50 to-rose-50 rounded-2xl p-8 shadow-lg hover:shadow-2xl">
+        <div
+          class="w-16 h-16 bg-gradient-to-br from-pink-500 to-rose-500 rounded-xl flex items-center justify-center mb-6">
+          <i class="fas fa-chart-line text-white text-2xl"></i>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-800 mb-3" data-i18n="strengths.items.2.title">
+          {{ site.data.i18n.en.strengths.items[2].title }}
+        </h3>
+        <p class="text-gray-600" data-i18n="strengths.items.2.desc">
+          {{ site.data.i18n.en.strengths.items[2].desc }}
+        </p>
+      </div>
+
+      <!-- Strength 4 -->
+      <div class="strength-card bg-gradient-to-br from-rose-50 to-orange-50 rounded-2xl p-8 shadow-lg hover:shadow-2xl">
+        <div
+          class="w-16 h-16 bg-gradient-to-br from-rose-500 to-orange-500 rounded-xl flex items-center justify-center mb-6">
+          <i class="fas fa-people-group text-white text-2xl"></i>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-800 mb-3" data-i18n="strengths.items.3.title">
+          {{ site.data.i18n.en.strengths.items[3].title }}
+        </h3>
+        <p class="text-gray-600" data-i18n="strengths.items.3.desc">
+          {{ site.data.i18n.en.strengths.items[3].desc }}
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- Footer -->
 <footer class="w-full bg-gray-900 py-12 px-6">
   <div class="container mx-auto text-center">
